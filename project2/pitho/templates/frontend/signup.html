@@ -1,0 +1,15 @@
+{% extends 'frontend/layout.html' %}
+{% block title %}
+	Register
+{% endblock %}
+{% block body %}
+<form action="{{url_for('signup_submit')}}" method ="post">
+	<label>name</label> 
+	<input type="text" name="Name"/><br>
+	<label>Email</label>
+	<input type="text" name="Email"/><br>
+	<label>password</label>
+	<input type="password" name="Password"/><br>
+	<button type="Submit">Signup</button>
+</form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'frontend/layout.html' %}
+{% block title %}
+	Home page
+{% endblock %}
+{% block body %}
+<form action="{{url_for('login_submit')}}" method="post">
+	<label>Username</label> 
+	<input type="text" name="username"/>
+	<label>password</label>
+	<input type="password" name="password"/>
+	<button type="Submit">Login</button>
+	<a href="{{url_for('forgotpassword')}}">Forgot password</a>
+</form>
+{% endblock %}
+
